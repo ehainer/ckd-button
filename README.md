@@ -8,7 +8,7 @@ Base button vue component for CKD internal use. Doesn't do much, it's supposed t
 ### Initial Setup
 
 * Clone this repo to your machine
-* Install dependencies with `yarn install`
+* Install dependencies with `yarn`
 
 ### Testing
 
