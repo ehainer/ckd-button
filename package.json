@@ -1,0 +1,81 @@
+{
+  "name": "ckd-button",
+  "version": "1.0.0",
+  "description": "CKD Design Standard Button",
+  "main": "dist/ckd-button.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehainer/ckd-button.git"
+  },
+  "author": "Eric Hainer <eric.hainer@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "package.json",
+    ".babelrc",
+    ".eslintrc.json",
+    "src/*",
+    "dist/*",
+    "spec/*"
+  ],
+  "jest": {
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/*.{js,vue}",
+      "!**/node_modules/**"
+    ],
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
+  },
+  "scripts": {
+    "build": "webpack -p --config webpack.config.js",
+    "spec": "jest",
+    "lint": "eslint src/ckd-button.vue"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.16",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.4",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "jest": "^22.4.4",
+    "jest-serializer-vue": "^1.0.0",
+    "jsdom": "^11.10.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "vue": "^2.5.16",
+    "vue-jest": "^2.6.0",
+    "vue-loader": "^15.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "vue-unit": "^0.2.2",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}
